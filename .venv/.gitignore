@@ -1,2 +1,0 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-# This approach keeps your API key out of your code and prevents accidentally committing it to version control. Always add .env to your .gitignore file.
