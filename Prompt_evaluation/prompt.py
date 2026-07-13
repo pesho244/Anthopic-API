@@ -1,4 +1,5 @@
-from multi_turn import client, add_user_message, add_assistant_message
+from multi_turn import client, add_user_message, add_assistant_message, chat
+
 
 # --- Step 1: Draft a Prompt ---
 # This is the "version 1" prompt we want to test and later improve.
