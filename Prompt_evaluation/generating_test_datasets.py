@@ -31,10 +31,11 @@ Generate an evaluation dataset for a prompt evaluation. The dataset will be used
 Example output:
 ```json
 [
-  {
-    "task": "Description of task",
-  },
-  ...additional
+    {
+        "task": "Description of task",
+        "format": "json" or "python" or "regex"
+    },
+    ...additional
 ]
 ```
 
