@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI in the format s3://bucket-name/key/path",
-    "format": "regex"
+    "task": "Extract the AWS region from an S3 bucket ARN (e.g., 'arn:aws:s3:::my-bucket-us-east-1')",
+    "format": "regex",
+    "solution_criteria": "Regex pattern should accurately capture the region identifier from S3 ARNs with various naming conventions, handling both standard and custom bucket names"
   },
   {
-    "task": "Create a JSON IAM policy that allows a user to read and list objects in a specific S3 bucket named 'my-data-bucket'",
-    "format": "json"
+    "task": "Parse an AWS CloudWatch log event JSON and extract the timestamp, log level, and message fields",
+    "format": "python",
+    "solution_criteria": "Function should handle nested JSON structures, gracefully manage missing fields, and return a dictionary with extracted values in the correct data types"
   },
   {
-    "task": "Write a Python function that takes an AWS EC2 instance ID string and validates that it follows the correct format (starts with 'i-' followed by 17 hexadecimal characters)",
-    "format": "python"
+    "task": "Create a CloudFormation template JSON snippet that defines an IAM role with AssumeRolePolicyDocument for EC2 service",
+    "format": "json",
+    "solution_criteria": "JSON should be valid CloudFormation syntax with correct IAM policy structure, proper Principal configuration for EC2, and appropriate Version and Effect statements"
   }
 ]
