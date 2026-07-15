@@ -1,0 +1,22 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Muscle Gain\n\n## Athlete Profile\n- **Height:** 205 cm (6'9\")\n- **Weight:** 125 kg (275 lbs)\n- **Goal:** Muscle gain\n- **Restrictions:** Kosher diet, shellfish allergy\n\n## Daily Nutritional Targets\n- **Calories:** 3,800 kcal\n- **Protein:** 220g (1.76g/kg bodyweight)\n- **Carbohydrates:** 475g\n- **Fat:** 115g\n\n---\n\n## Meal Schedule\n\n### Meal 1: Breakfast (7:00 AM)\n**Post-wake fuel**\n- Oatmeal: 100g (dry weight)\n- Whole eggs: 3 large (150g)\n- Egg whites: 150g\n- Banana: 150g\n- Almonds: 30g\n- Honey: 20g\n\n**Macros:** 850 kcal | 52g protein | 95g carbs | 30g fat\n\n---\n\n### Meal 2: Mid-Morning Snack (10:00 AM)\n**Pre-training fuel**\n- Greek yogurt (plain): 250g\n- Blueberries: 100g\n- Granola: 60g\n- Peanut butter: 25g\n\n**Macros:** 590 kcal | 35g protein | 65g carbs | 22g fat\n\n---\n\n### Meal 3: Lunch (1:00 PM)\n**Post-training recovery**\n- Grilled chicken breast: 250g\n- Brown rice: 150g (cooked)\n- Sweet potato: 200g\n- Broccoli: 150g\n- Olive oil: 15ml\n\n**Macros:** 850 kcal | 70g protein | 100g carbs | 18g fat\n\n---\n\n### Meal 4: Afternoon Snack (4:00 PM)\n**Sustained energy**\n- Whole wheat bread: 100g\n- Turkey breast (kosher): 120g\n- Avocado: 80g\n- Apple: 150g\n\n**Macros:** 580 kcal | 40g protein | 65g carbs | 18g fat\n\n---\n\n### Meal 5: Dinner (7:00 PM)\n**Evening protein & recovery**\n- Grilled salmon (with scales/fins - kosher): 220g\n- Quinoa: 100g (cooked)\n- Asparagus: 200g\n- Mixed green salad: 100g\n- Olive oil dressing: 20ml\n\n**Macros:** 730 kcal | 58g protein | 70g carbs | 32g fat\n\n---\n\n### Meal 6: Before Bed (10:00 PM)\n**Night recovery**\n- Cottage cheese: 200g\n- Walnuts: 30g\n- Strawberries: 100g\n- Casein protein shake: 30g powder with water\n\n**Macros:** 480 kcal | 50g protein | 30g carbs | 20g fat\n\n---\n\n## Daily Totals\n- **Calories:** 4,080 kcal\n- **Protein:** 305g\n- **Carbohydrates:** 425g\n- **Fat:** 140g\n\n## Important Notes:\n\u2705 All fish selections have fins and scales (kosher compliant)\n\u2705 All meat is kosher certified\n\u2705 No shellfish or non-kosher seafood\n\u2705 Dairy and meat meals separated appropriately\n\u2705 High protein intake supports muscle growth\n\u2705 Caloric surplus promotes mass gain\n\n**Hydration:** Drink 4-5 liters of water throughout the day",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "205",
+        "weight": "125",
+        "goal": "muscle gain",
+        "restrictions": "kosher diet, shellfish allergy"
+      },
+      "solution_criteria": [
+        "Meal plan provides high caloric intake appropriate for a 205cm, 125kg powerlifter with muscle gain goals (approximately 3500-4500 calories)",
+        "All meals comply with kosher dietary laws (no mixing meat and dairy, only kosher-approved foods) and exclude all shellfish",
+        "Meal plan includes high protein content (at least 180-200g) distributed across the day to support muscle gain"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with an extremely tall heavyweight powerlifter (205cm, 125kg) who has muscle gain goals and follows a kosher diet with shellfish allergy"
+    },
+    "score": 4,
+    "reasoning": "While the solution meets all three mandatory requirements (includes daily caloric total, macronutrient breakdown, and detailed meals with portions/timing), it contains a critical failure in one of the primary evaluation criteria: kosher dietary law compliance. The meal plan violates fundamental kosher laws by failing to properly separate meat and dairy. Specifically, eggs are often treated as pareve (neutral) but the breakfast combination and the timing of dairy consumption after meat meals throughout the day shows inadequate separation. Most critically, having cottage cheese at 10 PM after consuming meat at 7 PM violates the traditional waiting period required between meat and dairy (typically 3-6 hours). This represents a significant deficiency in meeting the kosher compliance criterion, which is explicitly listed as a primary evaluation standard."
+  }
+]

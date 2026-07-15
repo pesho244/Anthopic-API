@@ -1,0 +1,161 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #333; }
+            .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+            .summary-stats { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+            .stat-box { background-color: #fff; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-basis: 30%; min-width: 200px; }
+            .stat-value { font-size: 24px; font-weight: bold; margin-top: 5px; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th { background-color: #4a4a4a; color: white; text-align: left; padding: 12px; }
+            td { padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; width: 20%; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .score { font-weight: bold; padding: 5px 10px; border-radius: 3px; display: inline-block; }
+            .score-high { background-color: #c8e6c9; color: #2e7d32; }
+            .score-medium { background-color: #fff9c4; color: #f57f17; }
+            .score-low { background-color: #ffcdd2; color: #c62828; }
+            .output pre { background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; padding: 10px;
+                           font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 14px;
+                           white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; }
+            .score-col { width: 80px; }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box"><div>Total Test Cases</div><div class="stat-value">1</div></div>
+                <div class="stat-box"><div>Average Score</div><div class="stat-value">4.0 / 10</div></div>
+                <div class="stat-box"><div>Pass Rate (>=7)</div><div class="stat-value">0.0%</div></div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th><th>Prompt Inputs</th><th>Solution Criteria</th>
+                    <th>Output</th><th>Score</th><th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with an extremely tall heavyweight powerlifter (205cm, 125kg) who has muscle gain goals and follows a kosher diet with shellfish allergy</td>
+                <td><strong>height:</strong> 205<br><strong>weight:</strong> 125<br><strong>goal:</strong> muscle gain<br><strong>restrictions:</strong> kosher diet, shellfish allergy</td>
+                <td>&bull; Meal plan provides high caloric intake appropriate for a 205cm, 125kg powerlifter with muscle gain goals (approximately 3500-4500 calories)<br>&bull; All meals comply with kosher dietary laws (no mixing meat and dairy, only kosher-approved foods) and exclude all shellfish<br>&bull; Meal plan includes high protein content (at least 180-200g) distributed across the day to support muscle gain</td>
+                <td class="output"><pre># One-Day Meal Plan for Muscle Gain
+
+## Athlete Profile
+- **Height:** 205 cm (6'9")
+- **Weight:** 125 kg (275 lbs)
+- **Goal:** Muscle gain
+- **Restrictions:** Kosher diet, shellfish allergy
+
+## Daily Nutritional Targets
+- **Calories:** 3,800 kcal
+- **Protein:** 220g (1.76g/kg bodyweight)
+- **Carbohydrates:** 475g
+- **Fat:** 115g
+
+---
+
+## Meal Schedule
+
+### Meal 1: Breakfast (7:00 AM)
+**Post-wake fuel**
+- Oatmeal: 100g (dry weight)
+- Whole eggs: 3 large (150g)
+- Egg whites: 150g
+- Banana: 150g
+- Almonds: 30g
+- Honey: 20g
+
+**Macros:** 850 kcal | 52g protein | 95g carbs | 30g fat
+
+---
+
+### Meal 2: Mid-Morning Snack (10:00 AM)
+**Pre-training fuel**
+- Greek yogurt (plain): 250g
+- Blueberries: 100g
+- Granola: 60g
+- Peanut butter: 25g
+
+**Macros:** 590 kcal | 35g protein | 65g carbs | 22g fat
+
+---
+
+### Meal 3: Lunch (1:00 PM)
+**Post-training recovery**
+- Grilled chicken breast: 250g
+- Brown rice: 150g (cooked)
+- Sweet potato: 200g
+- Broccoli: 150g
+- Olive oil: 15ml
+
+**Macros:** 850 kcal | 70g protein | 100g carbs | 18g fat
+
+---
+
+### Meal 4: Afternoon Snack (4:00 PM)
+**Sustained energy**
+- Whole wheat bread: 100g
+- Turkey breast (kosher): 120g
+- Avocado: 80g
+- Apple: 150g
+
+**Macros:** 580 kcal | 40g protein | 65g carbs | 18g fat
+
+---
+
+### Meal 5: Dinner (7:00 PM)
+**Evening protein & recovery**
+- Grilled salmon (with scales/fins - kosher): 220g
+- Quinoa: 100g (cooked)
+- Asparagus: 200g
+- Mixed green salad: 100g
+- Olive oil dressing: 20ml
+
+**Macros:** 730 kcal | 58g protein | 70g carbs | 32g fat
+
+---
+
+### Meal 6: Before Bed (10:00 PM)
+**Night recovery**
+- Cottage cheese: 200g
+- Walnuts: 30g
+- Strawberries: 100g
+- Casein protein shake: 30g powder with water
+
+**Macros:** 480 kcal | 50g protein | 30g carbs | 20g fat
+
+---
+
+## Daily Totals
+- **Calories:** 4,080 kcal
+- **Protein:** 305g
+- **Carbohydrates:** 425g
+- **Fat:** 140g
+
+## Important Notes:
+✅ All fish selections have fins and scales (kosher compliant)
+✅ All meat is kosher certified
+✅ No shellfish or non-kosher seafood
+✅ Dairy and meat meals separated appropriately
+✅ High protein intake supports muscle growth
+✅ Caloric surplus promotes mass gain
+
+**Hydration:** Drink 4-5 liters of water throughout the day</pre></td>
+                <td class="score-col"><span class="score score-low">4</span></td>
+                <td>While the solution meets all three mandatory requirements (includes daily caloric total, macronutrient breakdown, and detailed meals with portions/timing), it contains a critical failure in one of the primary evaluation criteria: kosher dietary law compliance. The meal plan violates fundamental kosher laws by failing to properly separate meat and dairy. Specifically, eggs are often treated as pareve (neutral) but the breakfast combination and the timing of dairy consumption after meat meals throughout the day shows inadequate separation. Most critically, having cottage cheese at 10 PM after consuming meat at 7 PM violates the traditional waiting period required between meat and dairy (typically 3-6 hours). This represents a significant deficiency in meeting the kosher compliance criterion, which is explicitly listed as a primary evaluation standard.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
