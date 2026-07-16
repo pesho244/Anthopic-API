@@ -1,17 +1,18 @@
 [
   {
     "prompt_inputs": {
-      "height": "205",
-      "weight": "125",
-      "goal": "muscle gain",
-      "restrictions": "kosher diet, shellfish allergy"
+      "height": "200cm",
+      "weight": "120kg",
+      "goal": "weight loss",
+      "restrictions": "vegan, gluten-free, nut allergies"
     },
     "solution_criteria": [
-      "Meal plan provides high caloric intake appropriate for a 205cm, 125kg powerlifter with muscle gain goals (approximately 3500-4500 calories)",
-      "All meals comply with kosher dietary laws (no mixing meat and dairy, only kosher-approved foods) and exclude all shellfish",
-      "Meal plan includes high protein content (at least 180-200g) distributed across the day to support muscle gain"
+      "Provides a complete 1-day meal plan with breakfast, lunch, dinner, and snacks",
+      "All foods are vegan, gluten-free, and nut-free",
+      "Caloric intake supports weight loss for a 200cm, 120kg athlete (approximately 2200-2800 calories)",
+      "Includes adequate protein sources for an athlete without using nuts"
     ],
     "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with an extremely tall heavyweight powerlifter (205cm, 125kg) who has muscle gain goals and follows a kosher diet with shellfish allergy"
+    "scenario": "Testing with an extremely tall heavyweight athlete (200cm, 120kg) aiming for weight loss while managing multiple severe dietary restrictions (vegan, gluten-free, nut allergies)"
   }
 ]

@@ -41,6 +41,31 @@ def run_prompt(prompt_inputs):
     4. Use only foods that fit restrictions
     5. List all portion sizes in grams
     6. Keep budget-friendly if mentioned
+
+    Here is an example input with an ideal response:
+
+    <sample_input>
+    - Height: 175cm
+    - Weight: 70kg
+    - Goal: Muscle gain
+    - Dietary restrictions: Vegetarian
+    </sample_input>
+
+    <ideal_output>
+    Daily Calories: 2800 kcal
+    Macros: Protein 160g, Fat 80g, Carbs 340g
+
+    7:00 AM - Breakfast: Oats (100g), Greek yogurt (200g), banana (120g)
+    12:00 PM - Lunch: Lentils (150g dry), rice (200g cooked), spinach (100g)
+    3:00 PM - Snack: Cottage cheese (150g), almonds (30g)
+    7:00 PM - Dinner: Tofu (200g), quinoa (150g cooked), broccoli (150g)
+    </ideal_output>
+
+    This example is well-structured, provides exact gram-based portions,
+    clear meal timing, and hits the muscle-gain macro targets while
+    strictly respecting the vegetarian restriction.
+
+    Now generate a similar meal plan for the athlete information given above.
     """
 
     messages = []
