@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from anthropic.types import ToolParam
 from multi_turn import client, add_user_message, add_assistant_message, chat
 
 
@@ -59,6 +60,12 @@ def set_reminder(content, timestamp):
     print(f"----\nSetting the following reminder for {timestamp}:\n{content}\n----")
 
 
+def get_current_datetime(date_format="%Y-%m-%d %H:%M:%S"):
+    if not date_format:
+        raise ValueError("date_format cannot be empty")
+    return datetime.now().strftime(date_format)
+
+
 # --- Tool schemas ---
 # These describe each function to Claude: its name, what it does, and what
 # arguments it expects. Claude reads these to decide when and how to call
@@ -111,6 +118,22 @@ set_reminder_schema = {
     },
 }
 
+get_current_datetime_schema = ToolParam({
+    "name": "get_current_datetime",
+    "description": "Returns the current date and time formatted according to the specified format",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "date_format": {
+                "type": "string",
+                "description": "A string specifying the format of the returned datetime. Uses Python's strftime format codes.",
+                "default": "%Y-%m-%d %H:%M:%S"
+            }
+        },
+        "required": []
+    }
+})
+
 batch_tool_schema = {
     "name": "batch_tool",
     "description": "Invoke multiple other tool calls simultaneously",
@@ -139,9 +162,3 @@ batch_tool_schema = {
         "required": ["invocations"],
     },
 }
-
-if __name__ == "__main__":
-    result = add_duration_to_datetime("2026-07-16", duration=5, unit="days")
-    print(result)
-
-    set_reminder("Take out the trash", "2026-07-17T08:00:00")
